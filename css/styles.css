@@ -1,3 +1,31 @@
+
 .info-card {
-    background-color: rebeccapurple;
+    background-color: lightblue;
+    display: flex;
+    text-align: center;
+}
+
+.info-card h1 {
+    margin: 0px;
+    background-color: red;
+}
+
+.info-card img {
+    width: 100px;
+    height: auto;
+}
+
+.main-panel {
+    width: 90%;
+    margin: 5px auto;
+}
+
+header {
+    width: 90%;
+    margin: 5px auto;
+    background-color: bisque;
+}
+
+body {
+    background-color: aquamarine;
 }
