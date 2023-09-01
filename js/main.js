@@ -37,12 +37,15 @@ class ItchGame extends HTMLElement {
     displayGameInformation(data) {
         this.innerHTML = 
         `
-        <a href="https://${this.user}.itch.io/${this.game}">
-            <div ${this.content_id}>
-                <h2>${data.title}</h2>
-                <img src="${data.cover_image}">
-            </div>
-        </a>
+        <div class="itch-game">
+            <a href="https://${this.user}.itch.io/${this.game}">
+                <div ${this.content_id}>
+                    <h2>${data.title}</h2>
+                    <img src="${data.cover_image}">
+                </div>
+                <h1>Play on Itch.io</h1>
+            </a>
+        </div>
         `;
     }
 }

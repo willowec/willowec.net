@@ -36,9 +36,49 @@
     width: 70%;
     margin: 10px 10px 10px 0px;
     background-color: var(--tertiary-bg-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
     padding: 10px;
+}
+
+.itch-game {
+    background-color: var(--secondary-bg-color);
+    display: inline-flex;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.itch-game h2 {
+    margin: 5px 5px 0px 5px;
+    color: var(--secondary-text-color);
+}
+
+.itch-game h1 {
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+    color: var(--primary-bg-color);
+    background-color: var(--tertiary-text-color);
+}
+
+.itch-game img {
+    border-radius: 10px;
+    border: 5px solid var(--tertiary-text-color);
+    margin: 10px;
+}
+
+.itch-game a:hover img {
+    opacity: 0.5;
+}
+
+.itch-game a:hover h1 {
+    display: block;
+    position: relative;
+    top: -50%;
+}
+
+.itch-game h1 {
+    display: none;
 }
 
 .main-panel {
