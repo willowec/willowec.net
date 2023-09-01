@@ -6,25 +6,35 @@
     <title>Willow E. Cunningham</title>
 
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/itch_api.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        // Load the navigation bar
+        $(function(){
+            $("#page-header").load("html/nav.html");
+        });
+    </script>
 
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        Willow E Cunningham
+    <header id="page-header">
+        Critical error: Could not load navigation bar
     </header>
 
     <div class="main-panel">
         <div class="info-card">
-            <div>
-                <h1>Willow E Cunningham</h1>
-                <img src="img/portrait.png" alt="A photo of me!">
+            <div class="info-card-left">
+                <h1>Willow E. Cunningham</h1>
+                <img src="img/portrait.jpg" alt="A photo of me!">
             </div>
-            <div id="about-content">Could not load about content</div>
+            <div id="about-content" class="info-card-body">Could not load about content</div>
         </div>
     </div>
+
+    <itch-game user="willc-squared" game="circle-dodge"></itch-game>
 
 
 </body>
