@@ -1,4 +1,7 @@
 $(window).on('load', function() {
+    // Populate the blurb with its text
+    $("#games-content").load("/content/games_blurb.html")
+
     // Add custom elements to the DOM
     customElements.define("itch-game", ItchGame)
 

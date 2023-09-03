@@ -8,36 +8,59 @@
     --tertiary-text-color: #40798C;
 }
 
+h1 {
+    margin: 0px 0px 10px 0px;
+    color: var(--secondary-text-color);
+}
+
+h2 {
+    margin: 0px;
+    color: var(--secondary-text-color);
+}
+
+.inline-img {
+    display: inline;
+    margin: 0 0;
+    height: 1em;
+    width: auto;
+    padding: 0;
+    vertical-align: baseline;
+}
+
 .info-card {
     display: flex;
     text-align: center;
     border-radius: 10px;
 }
 
-.info-card h1 {
-    margin: 0px 0px 10px 0px;
-    color: var(--secondary-text-color);
-}
-
-.info-card img {
-    width: 100%;
+.info-card-left > img {
+    width: 300px;
     height: auto;
     border-radius: 10px;
 }
 
 .info-card > .info-card-left {
+    width: auto;
     margin: 10px;
-    width: 30%;
 }
 
 .info-card > .info-card-body {
+    width: 80%;
+
     border-radius: 10px;
-    width: 70%;
-    margin: 10px 10px 10px 0px;
+    margin: 10px;
     background-color: var(--tertiary-bg-color);
     color: var(--primary-text-color);
     text-align: left;
     padding: 10px;
+}
+
+.info-card-body a {
+    margin: 0;
+    font-size: medium;
+    background-color: var(--secondary-bg-color);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .itch-game {
@@ -50,7 +73,6 @@
 
 .itch-game h2 {
     margin: 5px 5px 0px 5px;
-    color: var(--secondary-text-color);
 }
 
 .itch-game h1 {
@@ -93,12 +115,15 @@
     margin: 5px auto;
     background-color: var(--secondary-bg-color);
     border-radius: 10px;
+    padding: 10px;
 }
 
 header {
     width: 90%;
-    margin: 5px auto;
-    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: var(--secondary-bg-color);
 }
 
 body {
@@ -108,7 +133,6 @@ body {
 
 .cards {
     margin: 0 auto;
-    padding: 10px;
     display: grid;
     gap: 1rem;
 }
@@ -119,4 +143,14 @@ body {
 
 @media (min-width: 1190px) {
     .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+.site-nav a {
+    margin: 10px;
+    font-size: large;
+    color: var(--tertiary-text-color);
+}
+
+p {
+    font-size: medium;
 }
