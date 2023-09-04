@@ -152,3 +152,11 @@ body {
 p {
     font-size: medium;
 }
+
+/* mobile device modifications */
+@media (any-pointer: coarse) {
+    /* double the font size if on mobile */
+    html {
+        font-size: 2em;
+    }
+}
