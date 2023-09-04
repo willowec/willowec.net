@@ -58,9 +58,7 @@ h2 {
 .info-card-body a {
     margin: 0;
     font-size: medium;
-    background-color: var(--secondary-bg-color);
-    border-radius: 5px;
-    padding: 5px;
+    color: var(--secondary-text-color);
 }
 
 .itch-game {
