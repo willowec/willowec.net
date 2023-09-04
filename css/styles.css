@@ -156,6 +156,7 @@ p {
 /* mobile device modifications */
 @media (any-pointer: coarse) {
     /* double the font size if on mobile */
+    /* I'm, uh, actually not sure this does anything */
     html {
         font-size: 2em;
     }
