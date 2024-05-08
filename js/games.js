@@ -57,7 +57,7 @@ class ItchGame extends HTMLElement {
 function loadGames() {
     $.getJSON("/content/games.json", function(games) {
         $.each(games, function(i, game) {
-            $("#games-container").append(`<div class=card><itch-game user="willc-squared" game="${game}"></itch-game></div>`);
+            $("#games-container").append(`<div class=card><itch-game user="willowec" game="${game}"></itch-game></div>`);
         })
     })
 }
