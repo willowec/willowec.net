@@ -57,7 +57,7 @@ h2 {
 
 .info-card-body a {
     margin: 0;
-    font-size: medium;
+    font-size: calc(medium + 1vw);
     color: var(--secondary-text-color);
 }
 
@@ -126,7 +126,7 @@ header {
 
 body {
     background-color: var(--primary-bg-color);
-    font: normal 10px Verdana, Arial, sans-serif;
+    font: normal calc(10px + 1vw) Verdana, Arial, sans-serif;
 }
 
 .cards {
@@ -145,19 +145,10 @@ body {
 
 .site-nav a {
     margin: 10px;
-    font-size: large;
+    font-size: calc(large + 1vw);
     color: var(--tertiary-text-color);
 }
 
 p {
-    font-size: medium;
-}
-
-/* mobile device modifications */
-@media (any-pointer: coarse) {
-    /* double the font size if on mobile */
-    /* I'm, uh, actually not sure this does anything */
-    html {
-        font-size: 100em;
-    }
+    font-size: calc(medium + 1vw);
 }
