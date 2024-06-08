@@ -126,7 +126,9 @@ header {
 
 body {
     background-color: var(--primary-bg-color);
-    font: normal calc(10px + 1vw) Verdana, Arial, sans-serif;
+    font-style: normal;
+    font-size: 1vw;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .cards {
