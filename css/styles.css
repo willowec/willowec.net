@@ -40,7 +40,7 @@ h2 {
 }
 
 .info-card > .info-card-left {
-    width: auto;
+    width: 30vw;
     margin: 10px;
 }
 
@@ -127,7 +127,7 @@ header {
 body {
     background-color: var(--primary-bg-color);
     font-style: normal;
-    font-size: 1vw;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -147,10 +147,10 @@ body {
 
 .site-nav a {
     margin: 10px;
-    font-size: calc(large + 1vw);
+    font-size: large;
     color: var(--tertiary-text-color);
 }
 
 p {
-    font-size: calc(medium + 1vw);
+    font-size: medium;
 }
