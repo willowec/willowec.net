@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Willow's Games</title>
+    
+        <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="/js/itch_api.js"></script>
+        <script type="text/javascript" src="/js/games.js"></script>
+    
+        <script>
+            // Load the navigation bar
+            $(function(){
+                $("#page-header").load("/html/nav.html");
+            });
+        </script>
+    
+        <link href="/css/styles.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="page-header">
+            Critical error: Could not load navigation bar
+        </header>
+
+        <div class="main-panel">
+            <div class="info-card">
+                <div class="info-card-left">
+                    <h1>Papers</h1>
+                </div>
+                <div id="about-content" class="info-card-body">
+                    <p>
+                        I worked on a few papers under Professor Vincent Weaver at the University of Maine, 
+                        Orono while researching performance monitoring of heterogenous multicore processors. 
+                        One has been published so far, and I'm hosting both here for convenience.
+                    </p>
+                    <ul>
+                        <li><a href="/content/papers/2024_heterogeneous_combined.pdf">Performance Measurement on Heterogeneous Processors with PAPI</a></li>
+                        <li><a href="/content/papers/2026_topdown.pdf">Supporting CPU Top-down Metrics in PAPI</a></li>
+                    </ul>    
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
